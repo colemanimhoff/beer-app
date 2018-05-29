@@ -1,0 +1,94 @@
+/* css reset */
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+
+/* app styling */
+
+body {
+    font-family: "Courier New", Courier, monospace;
+    background: rgb(51, 51, 51);
+}
+
+header {
+    height: 10vh;
+    background: rgb(185, 255, 141);
+    width: 100vw;
+    display: flex;
+    align-items: center;
+    box-shadow: rgb(255, 105, 180) .5vw .5vw .5vw;
+    
+}
+
+h1 {
+    color: rgb(255, 105, 180);
+    font-size: 4vw;
+    text-shadow: rgb(51, 51, 51) .2vw .2vw .2vw;
+}
+
+div {
+    height: 50vh;
+    background: rgb(255, 255, 255);
+    width: 25vw;
+    margin: 1vw;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+img {
+    height: 40vh;
+    width: auto;
+}
+
+main {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 5vh 0vw;
+}
+
+h2, p {
+    padding: .75vw;
+}
+
+.front:hover {
+    transform: scale(1.05);
+    transition: 500ms;
+    box-shadow: 0 0 .8vw rgb(255, 255, 255),
+    0 0 1.5vw rgb(255, 255, 255),
+    0 0 3.1vw  rgb(238, 162, 200),
+    0 0 5.5vw  rgb(255, 105, 180),
+    0 0 11.7vw rgb(255, 105, 180),
+    0 0 19.4vw rgb(255, 105, 180);
+}
