@@ -40,9 +40,8 @@ function flipCard (beers) {
     const beerCards = document.querySelectorAll('.beer-card')
     beerCards.forEach(beer => {
         beer.addEventListener('click', (event) => {
-            console.log(beer)
-            beer.classList.toggle('clicked')
-            beer.classList.remove('front')
+            beer.firstElementChild.classList.toggle('clicked')
+            beer.firstElementChild.nextElementSibling.classList.toggle("flipped")
         })
     })
 }
