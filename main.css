@@ -129,4 +129,11 @@ p {
 
 .flipped {
     z-index: 2;
+    transform: rotateY(180deg);
+    box-shadow: 0 0 .8vw rgb(255, 255, 255),
+    0 0 1.5vw rgb(255, 255, 255),
+    0 0 3.1vw  rgb(238, 162, 200),
+    0 0 5.5vw  rgb(255, 105, 180),
+    0 0 11.7vw rgb(255, 105, 180),
+    0 0 19.4vw rgb(255, 105, 180);
 }
