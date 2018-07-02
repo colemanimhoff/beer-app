@@ -1,0 +1,6 @@
+{
+  "projects": {
+    "default": "i-luv-beer",
+    "staging": "i-luv-beer"
+  }
+}

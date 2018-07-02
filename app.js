@@ -2,13 +2,10 @@ const getUrl = 'https://api.punkapi.com/v2/beers/?page=1&per_page=80'
 
 getData(getUrl)
 
-function getData (url) {
+function getData(url) {
     return fetch(url)
         .then(response => response.json())
-        .then(beers => {
-            createBeerCard(beers)
-            console.log(beers)
-        })
+        .then(beers => createBeerCard(beers))
         .then(beers => flipCard(beers))
 }
 
@@ -32,16 +29,16 @@ function createBeerCard(beers) {
                     </div>
                 </div>
         `)
+        return beerContainer
     })
-    return beerContainer
 }
 
-function flipCard (beers) {
+function flipCard() {
     const beerCards = document.querySelectorAll('.beer-card')
     beerCards.forEach(beer => {
-        beer.addEventListener('click', (event) => {
+        beer.addEventListener('click', (() => {
             beer.classList.toggle('clicked')
-            beer.firstElementChild.nextElementSibling.classList.toggle("flipped")
-        })
+            beer.firstElementChild.nextElementSibling.classList.toggle('flipped')
+        }))
     })
 }
