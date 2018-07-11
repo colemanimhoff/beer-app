@@ -15,6 +15,10 @@ A project for a meetup where beginners can build an application using an API and
 
 ![I Love Beer!](i-love-beer.png "I Love Beer!")
 
+## Technologies
+
+Built with Vanilla JavaScript, HTML, and CSS
+
 ## License
 
 See MIT License
