@@ -15,6 +15,10 @@ A project for a meetup where beginners can build an application using an API and
 
 ![I Love Beer!](i-love-beer.png "I Love Beer!")
 
+## License
+
+See MIT License
+
 ### Created by Coleman Imhoff
 [LinkedIn](https://www.linkedin.com/in/colemanimhoff/)
 colemanimhoff@gmail.com
